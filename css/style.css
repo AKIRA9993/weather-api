@@ -1,0 +1,280 @@
+body {
+    font-family: Open Sans;
+    background-color: #1e202b;
+}
+
+.navbar-content {
+    align-items: center;
+}
+
+.nav-item .nav-link {
+    border: 2px solid transparent;
+    border-radius: 60px;
+    padding: 10px 24px !important;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+
+}
+
+.nav-item .nav-link:hover {
+    border-color: #5dd9ff;
+
+
+
+    /* background-color:rgb(58, 58, 160); */
+    transform: translateY(-2px);
+    color: #009ad8 !important;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    border-color: #5dd9ff;
+    color: #5dd9ff !important;
+}
+
+.three-icons {
+    transition: all 0.3s ease;
+
+}
+
+.three-icons:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ===============hero section and search bar css============= */
+.hero-section {
+    background-image: url('../img/g1.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    position: relative;
+    overflow: visible;
+    
+
+}
+
+/* dark overlay for better layering visibility */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+}
+
+/* making sure the content is above the overlay */
+.hero-section .container {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+/* search bar wrapper */
+.search-wrapper {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+/* search inputs styling */
+.search-input {
+    background-color: #2d3142;
+    border: none;
+    color: #9ca3af;
+    padding: 20px 30px;
+    border-radius: 50px 0 0 50px;
+    font-size: 18px;
+
+}
+
+.search-input::placeholder {
+    color: #6b7280;
+}
+
+.search-input:focus {
+    background-color: #2d3142;
+    color: white;
+    box-shadow: none;
+    border: none;
+
+}
+
+
+/* Search button styling */
+.search-btn {
+    background-color: #0ea5e9;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 0 50px 50px 0;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0284c7;
+    transform: scale(1.02);
+}
+
+/* =====================main content container================= */
+/* === Weather Section Styling === */
+.main-content {
+    position: relative;
+    z-index: 3;
+    margin-top: -120px;
+    
+    margin: 10px;
+}
+
+/* Shared Card Base */
+.weather-card {
+    background-color: #323544;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+/* Card Headers */
+.weather-card .card-header {
+    background-color: #2d303d;
+    color: #bfc1c8;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+/* === TODAY CARD  === */
+.weather-today {
+    background-color: #323544;
+}
+
+.weather-today .city-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-today .temp {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.weather-today .weather-icon {
+    width: 64px;
+    height: 64px;
+    margin: 15px 0;
+}
+
+.weather-today .condition {
+    color: #009ad8;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.weather-today .extra-info {
+    display: flex;
+    justify-content: space-between;
+    color: #bfc1c8;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* === FORECAST CARD  === */
+.weather-next {
+    background-color: #262936;
+    text-align: center;
+}
+
+.weather-next .temp-max {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0 0;
+}
+
+.weather-next .temp-min {
+    font-size: 18px;
+    color: #bfc1c8;
+}
+
+.weather-next .condition {
+    color: #009ad8;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.weather-next .weather-icon {
+    width: 64px;
+    height: 64px;
+    margin: 10px 0;
+}
+/* =====================footer================= */
+footer {
+    background-color: #262936;
+    margin-top: 200px; 
+    padding: 40px 0;
+    text-align: center;
+    color: #bfc1c8;
+}
+
+
+.footer-input {
+    background-color: #3a3d4e;
+    border: none;
+    color: #999;
+    padding: 15px 20px;
+    border-radius: 50px 0 0 50px;
+}
+
+.footer-input::placeholder {
+    color: #6b7280;
+}
+
+.footer-input:focus {
+    background-color: #3a3d4e;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+.footer-btn {
+    background-color: #00bcd4;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 0 50px 50px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #0097a7;
+}
+
+.social-icon {
+    color: #999;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00bcd4;
+    transform: translateY(-3px);
+}
+
+.copyright-text {
+    color: #999;
+    margin: 0;
+    font-size: 14px;
+}
+
