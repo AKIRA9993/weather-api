@@ -278,3 +278,19 @@ footer {
     font-size: 14px;
 }
 
+/*========== media query for cards responsiveness=======*/
+@media (max-width: 768px) {
+  .main-content .row.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .weather-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
